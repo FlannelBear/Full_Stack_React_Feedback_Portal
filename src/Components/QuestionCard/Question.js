@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
 import Next from '../NextButton/NextButton';
+import PropTypes from 'prop-types';
 
 const mapReduxStateToProps = ({feedbackReducer}) => ({
     feedbackReducer
@@ -35,6 +36,12 @@ class Question extends Component{
         );
     }
 }
+
+Question.propTypes = {
+    nextPage: PropTypes.string,
+    question: PropTypes.string,
+    type: PropTypes.string
+};  
 
 export default compose(
     connect(mapReduxStateToProps)

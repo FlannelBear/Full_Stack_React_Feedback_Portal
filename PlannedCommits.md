@@ -45,7 +45,7 @@
     - reduxStore connection
     - Input fields connected to local state
     - dispatch input to reduxStore (FeedbackReducer)
-* [ ] Build Next Button Component:
+* [x] Build Next Button Component:
     - Boilerplate React Component
     - Link to next page
 * [ ] Add Question Component to Each Page:
