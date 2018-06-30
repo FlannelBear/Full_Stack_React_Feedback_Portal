@@ -25,6 +25,11 @@
     } };
     ```
     - logic for feeling, understanding, support, comment
+> Branch: Server-side routers
+* [ ] Build a router for /feedback
+    - GET
+    - POST
+    - DELETE
 > Branch: routing
 * [ ] Set up Hashrouter in App.js
 * [ ] Create 6 Pages:
