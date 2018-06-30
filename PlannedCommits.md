@@ -26,7 +26,7 @@
     ```
     - logic for feeling, understanding, support, comment
 > Branch: Server-side routers
-* [ ] Build a router for /feedback
+* [x] Build a router for /feedback
     - GET
     - POST
     - DELETE
