@@ -20,7 +20,7 @@ class Question extends Component{
     }
 
     submitInput = () => {
-        const type = this.props.actionType;
+        const type = this.props.type;
         const action = {type: {type}, payload: this.state.input}
         this.props.dispatch(action);
     }
