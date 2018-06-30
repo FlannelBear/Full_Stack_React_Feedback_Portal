@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import { HashRouter as Router, Route} from 'react-router-dom';
 
+import { connect } from 'react-redux';
+
 // Pages
 import Feeling from '../../Pages/Feeling';
 import Understand from '../../Pages/Understand';
@@ -9,6 +11,10 @@ import Support from '../../Pages/Support';
 import Comments from '../../Pages/Comments';
 import Thankyou from '../../Pages/Thankyou';
 import Admin from '../../Pages/Admin';
+
+const mapReduxToProps = ({feedbackReducer}) => ({
+  feedbackReducer
+});
 
 class App extends Component {
   render() {
@@ -24,9 +30,10 @@ class App extends Component {
           <Route path='/admin' component={Admin}/>
         </div>
       </Router>
+        {JSON.stringify(this.props.feedbackReducer)}
       </div>
     );
   }
 }
 
-export default App;
+export default connect(mapReduxToProps)(App);

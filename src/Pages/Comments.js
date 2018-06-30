@@ -2,10 +2,12 @@ import React from 'react';
 import Question from '../Components/QuestionCard/Question';
 
 const Comments = () => {
+    const nextPage = 'thankyou';
+    const question = 'Any comments you want to leave?';
+    const type = 'comments';
     return(
         <div>
-      <Question type='test' question='example question' nextPage='admin'/>
-            
+            <Question type={type} question={question} nextPage={nextPage}/>     
         </div>
     );
 }

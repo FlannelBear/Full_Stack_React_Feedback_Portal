@@ -48,7 +48,7 @@
 * [x] Build Next Button Component:
     - Boilerplate React Component
     - Link to next page
-* [ ] Add Question Component to Each Page:
+* [x] Add Question Component to Each Page:
     - Import component
     - Pass 'next' (url to next page) and 'question' (question string for card) via props
 * [ ] Build Submit Button Component:
