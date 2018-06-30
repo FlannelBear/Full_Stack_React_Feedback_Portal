@@ -14,7 +14,9 @@ class Question extends Component{
         this.state = {input: ''}
     }
 
-    
+    handleInputChange = (event) => {
+        this.setState({input: event.target.value});
+    }
 
     render(){
         return(
