@@ -11,6 +11,7 @@ import Thankyou from '../../Pages/Thankyou';
 import Admin from '../../Pages/Admin';
 
 // Component Testing
+import Question from '../QuestionCard/Question';
 
 class App extends Component {
   render() {
@@ -19,11 +20,13 @@ class App extends Component {
       <Router>
         <div>
           <Route exact path='/' component={Feeling}/>
-          <Route exact path='/' component={Understand}/>
-          <Route exact path='/' component={Support}/>
-          <Route exact path='/' component={Comments}/>
-          <Route exact path='/' component={Thankyou}/>
-          <Route exact path='/' component={Admin}/>
+          <Route path='/understand' component={Understand}/>
+          <Route path='/support' component={Support}/>
+          <Route path='/comments' component={Comments}/>
+          <Route path='/thankyou' component={Thankyou}/>
+          <Route path='/admin' component={Admin}/>
+      <Question type='test' question='example question' nextPage='admin'/>
+
         </div>
       </Router>
       </div>

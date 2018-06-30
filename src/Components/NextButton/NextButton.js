@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-const NextButton = () => {
+class NextButton extends Component{
+
+    render(){
         return(
-            <button><Link path={`/${this.props.next}`}/></button>
+            <button><Link to={`/${this.props.next}`}>Next</Link></button>
         );
     }
-
+}
 
 export default NextButton;
