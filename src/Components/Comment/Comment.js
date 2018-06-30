@@ -3,13 +3,12 @@ import { compose } from 'redux';
 import { connect } from 'react-redux';
 import NextButton from '../NextButton/NextButton';
 import PropTypes from 'prop-types';
-import axios from 'axios';
 
 const mapReduxStateToProps = ({feedbackReducer}) => ({
     feedbackReducer
 });
 
-class Question extends Component{
+class Comment extends Component{
     constructor(){
         super();
 
@@ -27,23 +26,19 @@ class Question extends Component{
         this.props.dispatch(action);
     }
 
-    submitFeedback = () =>{
-        axios.post('/feedback', this.props.feedbackReducer).then().catch();
-    }
-
     render(){
         return(
             <div>
-                <h2>Question</h2>
+                <h2>Comment</h2>
                 <h4>{this.props.question}</h4>
-                <input type="number" value={this.state.input} onChange={this.handleInputChange} placeholder="Answer"/>
+                <input type="text" value={this.state.input} onChange={this.handleInputChange} placeholder="Answer"/>
                 <NextButton submit={this.submitInput} next={this.props.nextPage}/>
             </div>
         );
     }
 }
 
-Question.propTypes = {
+Comment.propTypes = {
     nextPage: PropTypes.string,
     question: PropTypes.string,
     actionType: PropTypes.string
@@ -51,4 +46,4 @@ Question.propTypes = {
 
 export default compose(
     connect(mapReduxStateToProps)
-)(Question);
+)(Comment);

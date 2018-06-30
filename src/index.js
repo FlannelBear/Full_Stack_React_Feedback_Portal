@@ -32,7 +32,10 @@ const feedbackReducer = (state = {feeling: '', understanding: '', support: '', c
     else if (action.type === 'C_PAGE'){
         console.log('in');        
         return {...state, comment: action.payload};            
-    } else {
+    } else if(action.type === 'CLEAR'){
+        return action.payload;
+    }
+    else {
     return state;
     }
 } // end feedbackReducer
