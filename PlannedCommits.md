@@ -40,21 +40,21 @@
     - Thankyou
     - Admin
 > Branch: basic-components
-* [ ] Build Question Component:
+* [x] Build Question Component:
     - Boilerplate React Component
     - reduxStore connection
     - Input fields connected to local state
     - dispatch input to reduxStore (FeedbackReducer)
-* [ ] Build Next Button Component:
+* [x] Build Next Button Component:
     - Boilerplate React Component
     - Link to next page
-* [ ] Add Question Component to Each Page:
+* [x] Add Question Component to Each Page:
     - Import component
     - Pass 'next' (url to next page) and 'question' (question string for card) via props
-* [ ] Build Submit Button Component:
+* [x] Build Submit Button Component:
     - Boilerplate React Component
     - Axios POST
-* [ ] Build AdminTable Component:
+* [x] Build AdminTable Component:
     - Boilerplate React Component
     - Table structure
     - Axios GET
