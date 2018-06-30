@@ -29,8 +29,6 @@ class Question extends Component{
                 <h2>Question</h2>
                 <h4>{this.props.question}</h4>
                 <input type="text" value={this.state.input} onChange={this.handleInputChange} placeholder="Answer"/>
-                {JSON.stringify(this.state)}
-                {JSON.stringify(this.props)}
             </div>
         );
     }

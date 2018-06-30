@@ -40,7 +40,7 @@
     - Thankyou
     - Admin
 > Branch: basic-components
-* [ ] Build Question Component:
+* [x] Build Question Component:
     - Boilerplate React Component
     - reduxStore connection
     - Input fields connected to local state
