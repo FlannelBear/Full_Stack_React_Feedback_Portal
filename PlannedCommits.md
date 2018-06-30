@@ -10,7 +10,7 @@
     - react-redux
 > Branch: reduxStore-setup
 * [x] Set up reduxStore in index.js
-* [ ] Build FeedbackReducer:
+* [x] Build FeedbackReducer:
     - action.type for GET from db through server
     - action.type for feeling, understanding, support, comment
     - state:
