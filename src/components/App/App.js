@@ -17,6 +17,7 @@ const mapReduxToProps = ({feedbackReducer}) => ({
 });
 
 class App extends Component {
+
   render() {
     return (
       <div>

@@ -5,7 +5,7 @@ class NextButton extends Component{
 
     render(){
         return(
-            <button><Link to={`/${this.props.next}`}>Next</Link></button>
+            <button onClick={this.props.submit}><Link to={`/${this.props.next}`}>Next</Link></button>
         );
     }
 }

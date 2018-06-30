@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { compose } from 'redux';
 import { connect } from 'react-redux';
-import Next from '../NextButton/NextButton';
+import NextButton from '../NextButton/NextButton';
 import PropTypes from 'prop-types';
 
 const mapReduxStateToProps = ({feedbackReducer}) => ({
@@ -31,7 +31,7 @@ class Question extends Component{
                 <h2>Question</h2>
                 <h4>{this.props.question}</h4>
                 <input type="text" value={this.state.input} onChange={this.handleInputChange} placeholder="Answer"/>
-                <Next submit={this.submitInput} next={this.props.nextPage}/>
+                <NextButton submit={this.submitInput} next={this.props.nextPage}/>
             </div>
         );
     }
