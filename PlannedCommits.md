@@ -3,13 +3,13 @@
 
 ## Planned Git Commits
 * [x] Init
-* [ ] Planned Commits List
-* [ ] Install dependencies:
+* [x] Planned Commits List
+* [x] Install dependencies:
     - react-router-dom
     - redux
     - react-redux
 > Branch: reduxStore-setup
-* [ ] Set up reduxStore in index.js
+* [x] Set up reduxStore in index.js
 * [ ] Build FeedbackReducer:
     - action.type for GET from db through server
     - action.type for feeling, understanding, support, comment
