@@ -31,8 +31,8 @@
     - POST
     - DELETE
 > Branch: routing
-* [ ] Set up Hashrouter in App.js
-* [ ] Create 6 Pages:
+* [x] Set up Hashrouter in App.js
+* [x] Create 6 Pages:
     - Feeling
     - Understanding
     - Support
