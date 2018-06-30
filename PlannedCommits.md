@@ -32,7 +32,7 @@
     - DELETE
 > Branch: routing
 * [x] Set up Hashrouter in App.js
-* [ ] Create 6 Pages:
+* [x] Create 6 Pages:
     - Feeling
     - Understanding
     - Support
