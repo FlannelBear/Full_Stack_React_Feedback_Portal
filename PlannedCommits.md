@@ -51,7 +51,7 @@
 * [x] Add Question Component to Each Page:
     - Import component
     - Pass 'next' (url to next page) and 'question' (question string for card) via props
-* [ ] Build Submit Button Component:
+* [x] Build Submit Button Component:
     - Boilerplate React Component
     - Axios POST
 * [x] Build AdminTable Component:

@@ -14,11 +14,9 @@ class Thankyou extends Component{
     }
 
     submitFeedback(){
-        if(this.props.feedbackReducer){
-            alert("You've already submitted feedback, click the button below to navigate back to add more feedback.");
-        } else {
-            axios.post('/feedback', this.props.feedbackReducer).then().catch();
-        }
+        axios.post('/feedback', this.props.feedbackReducer).then().catch((error)=>{
+            alert('Go back to the beginning!');
+        }); 
     }
 
     render(){
