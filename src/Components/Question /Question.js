@@ -1,4 +1,10 @@
 import React, { Component } from 'react';
+import { compose } from 'redux';
+import { connect } from 'react-redux';
+
+const mapReduxStateToProps = ({feedbackReducer}) => ({
+    feedbackReducer
+});
 
 class Question extends Component{
     render(){
@@ -10,4 +16,6 @@ class Question extends Component{
     }
 }
 
-export default Question;
+export default compose(
+    connect(mapReduxStateToProps)
+)(Question);
