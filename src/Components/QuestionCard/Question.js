@@ -20,7 +20,7 @@ class Question extends Component{
     }
 
     submitInput = () => {
-        const type = this.props.type;
+        const type = this.props.actionType;
         const action = {type: {type}, payload: this.state.input}
         this.props.dispatch(action);
     }
@@ -40,7 +40,7 @@ class Question extends Component{
 Question.propTypes = {
     nextPage: PropTypes.string,
     question: PropTypes.string,
-    type: PropTypes.string
+    actionType: PropTypes.string
 };  
 
 export default compose(

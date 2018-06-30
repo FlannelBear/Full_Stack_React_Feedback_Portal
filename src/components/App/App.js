@@ -10,9 +10,6 @@ import Comments from '../../Pages/Comments';
 import Thankyou from '../../Pages/Thankyou';
 import Admin from '../../Pages/Admin';
 
-// Component Testing
-import Question from '../QuestionCard/Question';
-
 class App extends Component {
   render() {
     return (
@@ -25,8 +22,6 @@ class App extends Component {
           <Route path='/comments' component={Comments}/>
           <Route path='/thankyou' component={Thankyou}/>
           <Route path='/admin' component={Admin}/>
-      <Question type='test' question='example question' nextPage='admin'/>
-
         </div>
       </Router>
       </div>
