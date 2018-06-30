@@ -13,16 +13,19 @@ class Question extends Component{
         super();
 
         this.state = {input: ''}
+
+        this.submitInput = this.submitInput.bind(this);
     }
 
     handleInputChange = (event) => {
         this.setState({input: event.target.value});
     }
 
-    submitInput = () => {
+    submitInput(){
         const type = this.props.type;
-        const action = {type: {type}, payload: this.state.input}
+        const action = {type: type, payload: this.state.input}
         this.props.dispatch(action);
+        this.setState({input: ''});
     }
 
     render(){

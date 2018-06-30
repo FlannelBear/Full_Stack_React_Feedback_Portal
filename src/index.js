@@ -17,19 +17,19 @@ const databaseReducer = (state = [], action) => {
 const feedbackReducer = (state = {feeling: '', understanding: '', support: '', comment: ''}, action) => {
     console.log('In feedbackreducer');
     console.log(action.type);
-    if(action.type == "feeling"){
+    if(action.type === 'F_PAGE'){
         console.log('in');
         return {...state, feeling: action.payload};
     }
-    else if (action.type == 'understanding'){
+    else if (action.type === 'U_PAGE'){
         console.log('in');
         return {...state, understanding: action.payload};        
     }
-    else if (action.type == 'support'){
+    else if (action.type === 'S_PAGE'){
         console.log('in');
         return {...state, support: action.payload};
     }
-    else if (action.type == 'comment'){
+    else if (action.type === 'C_PAGE'){
         console.log('in');        
         return {...state, comment: action.payload};            
     } else {

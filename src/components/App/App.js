@@ -31,7 +31,6 @@ class App extends Component {
           <Route path='/admin' component={Admin}/>
         </div>
       </Router>
-        {JSON.stringify(this.props.feedbackReducer)}
       </div>
     );
   }

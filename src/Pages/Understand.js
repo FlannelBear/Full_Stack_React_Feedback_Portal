@@ -4,7 +4,7 @@ import Question from '../Components/QuestionCard/Question';
 const Understand = () => {
     const nextPage = 'support';
     const question = 'How well are you understanding the content?';
-    const type = 'understand';
+    const type = 'U_PAGE';
     return(
         <div>
             <Question type={type} question={question} nextPage={nextPage}/>
