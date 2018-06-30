@@ -33,7 +33,7 @@ class Question extends Component{
             <div>
                 <h2>Question</h2>
                 <h4>{this.props.question}</h4>
-                <input type="text" value={this.state.input} onChange={this.handleInputChange} placeholder="Answer"/>
+                <input type="number" value={this.state.input} onChange={this.handleInputChange} placeholder="Answer"/>
                 <NextButton submit={this.submitInput} next={this.props.nextPage}/>
             </div>
         );

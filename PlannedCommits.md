@@ -54,7 +54,7 @@
 * [ ] Build Submit Button Component:
     - Boilerplate React Component
     - Axios POST
-* [ ] Build AdminTable Component:
+* [x] Build AdminTable Component:
     - Boilerplate React Component
     - Table structure
     - Axios GET
