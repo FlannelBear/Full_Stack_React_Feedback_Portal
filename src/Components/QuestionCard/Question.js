@@ -12,6 +12,7 @@ import Card from '@material-ui/core/Card/Card';
 import CardContent from '@material-ui/core/CardContent/CardContent';
 import CardActions from '@material-ui/core/CardActions/CardActions';
 import Typography from '@material-ui/core/Typography/Typography';
+import Input from '@material-ui/core/Input/Input';
 
 const mapReduxStateToProps = ({feedbackReducer}) => ({
     feedbackReducer
@@ -40,19 +41,16 @@ class Question extends Component{
     }
 
     render(){
+        const { classes } = this.props;
         return(
             <div>
-                <h2>Question</h2>
-                <h4>{this.props.question}</h4>
-                <input type="number" value={this.state.input} onChange={this.handleInputChange} placeholder="Answer"/>
-                <NextButton submit={this.submitInput} next={this.props.nextPage}/>
-
-                <Card>
-                    <CardContent>
-
+                <Card className={classes.card}>
+                    <CardContent className={classes.questionBox}>
+                        <Typography variant="title">{this.props.question}</Typography>
+                        <Input type="number" value={this.state.input} onChange={this.handleInputChange} placeholder="Answer"/>
                     </CardContent>
-                    <CardActions>
-
+                    <CardActions className={classes.buttonBox}>
+                        <NextButton className={classes.button} submit={this.submitInput} next={this.props.nextPage}/>
                     </CardActions>
                 </Card>
             </div>
