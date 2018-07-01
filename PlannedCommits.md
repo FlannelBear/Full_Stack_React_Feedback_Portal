@@ -59,7 +59,7 @@
     - Table structure
     - Axios GET
 > Branch: add-material-ui
-* [ ] Install @material-ui/core
+* [x] Install @material-ui/core
 * [ ] Refactor each component to use material-ui
     - Question
     - Next Button
