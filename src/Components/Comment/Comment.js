@@ -31,7 +31,7 @@ class Comment extends Component{
             <div>
                 <h2>Comment</h2>
                 <h4>{this.props.question}</h4>
-                <input type="text" value={this.state.input} onChange={this.handleInputChange} placeholder="Answer"/>
+                <textarea type="text" value={this.state.input} onChange={this.handleInputChange} placeholder="Answer"/>
                 <NextButton submit={this.submitInput} next={this.props.nextPage}/>
             </div>
         );
