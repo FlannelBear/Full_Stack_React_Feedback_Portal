@@ -65,9 +65,8 @@
     - Next Button
     - Submit Button
     - AdminTable
-> Branch: header-component
-* [ ] Build Header Component using material-ui
-* [ ] Add Header to App.js
+* [x] Build Header Component using material-ui
+* [x] Add Header to App.js
 >Branch: statusbar-component
 * [ ] Build StatusBar Component using material-ui
 * [ ] Add StatusBar to each Page
