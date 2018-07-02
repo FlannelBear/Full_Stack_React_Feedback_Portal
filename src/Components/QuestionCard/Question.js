@@ -5,6 +5,8 @@ import NextButton from '../NextButton/NextButton';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 
+import StatusBar from '../StatusBar/StatusBar';
+
 // Material UI
 import {withStyles} from '@material-ui/core';
 import {styles} from '../../Card.styles';
@@ -44,6 +46,7 @@ class Question extends Component{
         const { classes } = this.props;
         return(
             <div>
+                <StatusBar step={this.props.step}/>
                 <Card className={classes.card}>
                     <CardContent className={classes.questionBox}>
                         <Typography variant="title">{this.props.question}</Typography>

@@ -5,9 +5,10 @@ const Understand = () => {
     const nextPage = 'support';
     const question = 'How well are you understanding the content?';
     const type = 'U_PAGE';
+    const step = 1;
     return(
         <div>
-            <Question type={type} question={question} nextPage={nextPage}/>
+            <Question type={type} question={question} nextPage={nextPage} step={step}/>
         </div>
     );
 }

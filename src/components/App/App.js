@@ -19,6 +19,7 @@ import Admin from '../../Pages/Admin';
 
 // Components
 import Header from '../Header/Header';
+import StatusBar from '../StatusBar/StatusBar';
 
 const mapReduxToProps = ({feedbackReducer}) => ({
   feedbackReducer
