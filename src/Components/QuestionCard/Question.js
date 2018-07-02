@@ -7,7 +7,7 @@ import axios from 'axios';
 
 // Material UI
 import {withStyles} from '@material-ui/core';
-import {styles} from './Question.styles';
+import {styles} from '../../Card.styles';
 import Card from '@material-ui/core/Card/Card';
 import CardContent from '@material-ui/core/CardContent/CardContent';
 import CardActions from '@material-ui/core/CardActions/CardActions';

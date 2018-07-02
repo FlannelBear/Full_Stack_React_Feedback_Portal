@@ -13,8 +13,5 @@ export const styles = {
     },
     buttonBox: {
         backgroundColor: 'white'
-    },
-    button: {
-        float: 'right'
     }
 }
