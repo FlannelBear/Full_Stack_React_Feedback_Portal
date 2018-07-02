@@ -47,7 +47,7 @@ class Question extends Component{
                 <Card className={classes.card}>
                     <CardContent className={classes.questionBox}>
                         <Typography variant="title">{this.props.question}</Typography>
-                        <Input type="number" value={this.state.input} onChange={this.handleInputChange} placeholder="Answer"/>
+                        <Input className={classes.question} type="number" value={this.state.input} onChange={this.handleInputChange} placeholder="Answer"/>
                     </CardContent>
                     <CardActions className={classes.buttonBox}>
                         <NextButton className={classes.button} submit={this.submitInput} next={this.props.nextPage}/>
