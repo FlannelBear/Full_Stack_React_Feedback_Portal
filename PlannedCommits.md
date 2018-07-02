@@ -59,15 +59,14 @@
     - Table structure
     - Axios GET
 > Branch: add-material-ui
-* [ ] Install @material-ui/core
-* [ ] Refactor each component to use material-ui
+* [x] Install @material-ui/core
+* [x] Refactor each component to use material-ui
     - Question
     - Next Button
     - Submit Button
     - AdminTable
-> Branch: header-component
-* [ ] Build Header Component using material-ui
-* [ ] Add Header to App.js
+* [x] Build Header Component using material-ui
+* [x] Add Header to App.js
 >Branch: statusbar-component
 * [ ] Build StatusBar Component using material-ui
 * [ ] Add StatusBar to each Page
