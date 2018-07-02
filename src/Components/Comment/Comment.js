@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import NextButton from '../NextButton/NextButton';
 import PropTypes from 'prop-types';
 
+import StatusBar from '../StatusBar/StatusBar';
+
 // Material UI
 import { withStyles } from '@material-ui/core';
 import { styles } from '../../Card.styles';
@@ -37,6 +39,8 @@ class Comment extends Component{
     render(){
         const { classes } = this.props;
         return(
+            <div>
+                <StatusBar step={this.props.step}/>
             <Card className={classes.card}>
                 <CardContent className={classes.questionBox}>
                 <Typography variant="title">{this.props.question}</Typography>
@@ -46,6 +50,7 @@ class Comment extends Component{
                 <NextButton submit={this.submitInput} next={this.props.nextPage}/>
                 </CardActions>
             </Card>
+            </div>
         );
     }
 }
