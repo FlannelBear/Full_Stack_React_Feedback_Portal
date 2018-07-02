@@ -3,6 +3,11 @@ import './App.css';
 import { HashRouter as Router, Route} from 'react-router-dom';
 
 import { connect } from 'react-redux';
+import { compose } from 'redux';
+
+// Material UI
+import { withStyles } from '@material-ui/core';
+import { styles } from './App.styles';
 
 // Pages
 import Feeling from '../../Pages/Feeling';
@@ -12,6 +17,9 @@ import Comments from '../../Pages/Comments';
 import Thankyou from '../../Pages/Thankyou';
 import Admin from '../../Pages/Admin';
 
+// Components
+import Header from '../Header/Header';
+
 const mapReduxToProps = ({feedbackReducer}) => ({
   feedbackReducer
 });
@@ -19,10 +27,13 @@ const mapReduxToProps = ({feedbackReducer}) => ({
 class App extends Component {
 
   render() {
+    const {classes} = this.props;
     return (
       <div>
+        <Header />
+      <div className={classes.main}>
       <Router>
-        <div>
+        <div className={classes.page}>
           <Route exact path='/' component={Feeling}/>
           <Route path='/understand' component={Understand}/>
           <Route path='/support' component={Support}/>
@@ -32,8 +43,12 @@ class App extends Component {
         </div>
       </Router>
       </div>
+      </div>
     );
   }
 }
 
-export default connect(mapReduxToProps)(App);
+export default compose(
+  withStyles(styles),
+  connect(mapReduxToProps)
+)(App);

@@ -60,7 +60,7 @@
     - Axios GET
 > Branch: add-material-ui
 * [x] Install @material-ui/core
-* [ ] Refactor each component to use material-ui
+* [x] Refactor each component to use material-ui
     - Question
     - Next Button
     - Submit Button
