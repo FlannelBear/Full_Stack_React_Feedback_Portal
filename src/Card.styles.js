@@ -13,5 +13,9 @@ export const styles = {
     },
     buttonBox: {
         backgroundColor: 'white'
+    },
+    inputLabel: {
+        margin: 10,
+        display: 'block'
     }
 }

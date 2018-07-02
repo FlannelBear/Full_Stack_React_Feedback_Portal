@@ -19,7 +19,6 @@ import Admin from '../../Pages/Admin';
 
 // Components
 import Header from '../Header/Header';
-import StatusBar from '../StatusBar/StatusBar';
 
 const mapReduxToProps = ({feedbackReducer}) => ({
   feedbackReducer
@@ -30,10 +29,10 @@ class App extends Component {
   render() {
     const {classes} = this.props;
     return (
-      <div>
-        <Header />
-      <div className={classes.main}>
       <Router>
+        <div>
+      <Header />
+      <div className={classes.main}>
         <div className={classes.page}>
           <Route exact path='/' component={Feeling}/>
           <Route path='/understand' component={Understand}/>
@@ -42,9 +41,9 @@ class App extends Component {
           <Route path='/thankyou' component={Thankyou}/>
           <Route path='/admin' component={Admin}/>
         </div>
+      </div>
+      </div>
       </Router>
-      </div>
-      </div>
     );
   }
 }

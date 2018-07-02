@@ -3,7 +3,7 @@ import Question from '../Components/QuestionCard/Question';
 
 const Support = () => {
     const nextPage = 'comments';
-    const question = 'How are you feeling today?';
+    const question = 'How well are you feeling supported?';
     const type = 'S_PAGE';
     const step = 2;
     return(

@@ -14,7 +14,7 @@ class StatusBar extends Component{
         super(props);
 
         this.state = {
-            steps: ['Feeling', 'Understanding', 'Support', 'Comment'], 
+            steps: ['Feeling', 'Comprehension', 'Support', 'Comment'], 
         }
     }
 
