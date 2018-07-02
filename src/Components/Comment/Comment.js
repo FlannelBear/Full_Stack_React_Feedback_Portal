@@ -44,7 +44,7 @@ class Comment extends Component{
             <Card className={classes.card}>
                 <CardContent className={classes.questionBox}>
                 <Typography variant="title">{this.props.question}</Typography>
-                <textarea className={classes.question} type="text" value={this.state.input} onChange={this.handleInputChange} placeholder="Answer"/>
+                <textarea className={classes.question} type="text" value={this.state.input} onChange={this.handleInputChange} placeholder="Leave a comment"/>
                 </CardContent>
                 <CardActions className={classes.buttonBox}>
                 <NextButton submit={this.submitInput} next={this.props.nextPage}/>
