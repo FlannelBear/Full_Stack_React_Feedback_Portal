@@ -68,7 +68,9 @@
 * [x] Build Header Component using material-ui
 * [x] Add Header to App.js
 >Branch: statusbar-component
-* [ ] Build StatusBar Component using material-ui
-* [ ] Add StatusBar to each Page
->Branch: final-styling
-* [ ] Final Styling
+* [x] Build StatusBar Component using material-ui
+* [x] Add StatusBar to each Page
+>Branch: finish-project
+* [x] Final Styling
+>Material Table
+* [ ] Style Admin Table
